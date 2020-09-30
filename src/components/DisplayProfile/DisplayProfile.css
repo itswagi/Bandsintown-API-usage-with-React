@@ -1,0 +1,40 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 16rem;
+  margin: auto;
+  padding: 0.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: transform 0.5s;
+
+}
+
+.profile:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.profile .image{
+  height: 16rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile h2{
+  margin-bottom: 0.3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.profile .information {
+  background-color: #f2ede9;
+  padding: 0.5rem 0.5rem;
+}
+
+.information a{
+  font-size: .88rem;
+  font-weight: 300;
+  line-height: 1rem;
+}
