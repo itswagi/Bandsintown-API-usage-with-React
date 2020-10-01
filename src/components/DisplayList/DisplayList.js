@@ -6,7 +6,12 @@ class DisplayList extends React.Component{
   render(){
     return(
       <div className="DisplayList">
-            <DisplayProfile artist={this.props.artist} key={this.props.artist.id}/>
+      {
+        this.props.artist.map( artists => {
+          return <DisplayProfile artist={artists} key={artists.id}/>
+        })
+      }
+
       </div>
     )
   }

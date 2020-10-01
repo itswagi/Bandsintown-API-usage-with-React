@@ -1,6 +1,6 @@
 .DisplayEventsList{
   display: flex;
-  direction: row;
+  flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
 }

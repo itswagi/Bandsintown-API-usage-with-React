@@ -11,17 +11,18 @@ class App extends React.Component {
     super(props);
     this.state = {
       profiles: [],
-      events: []
+      events: [],
     };
     this.searchApi = this.searchApi.bind(this);
   }
   searchApi(artist){
     Api.search(artist).then(profiles => {
-      this.setState({profiles: profiles});
+      this.setState({profiles: [profiles]});
     });
     EventApi.search(artist).then( events => {
       this.setState({events: events});
     });
+
   }
   render(){
     return (
