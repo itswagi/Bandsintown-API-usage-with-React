@@ -1,4 +1,11 @@
-
+html{
+  font-size: 18px;
+}
+@media only screen and (max-width: 560px) {
+  html {
+    font-size: 15px;
+  }
+}
 .mainContainer{
     max-width: 1264px;
     width: auto;

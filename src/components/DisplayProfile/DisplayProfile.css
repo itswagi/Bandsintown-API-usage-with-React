@@ -30,6 +30,7 @@
 .profile .information {
   background-color: #f2ede9;
   padding: 0.5rem 0.5rem;
+  overflow: hidden;
 }
 
 .information a{

@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ReactCSSTransitionGroup from 'react-transition-group';
 import DisplayList from '../DisplayList/DisplayList'
 import Search from '../Search/Search';
 import DisplayEventsList from '../DisplayEventsList/DisplayEventsList'
