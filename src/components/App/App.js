@@ -6,7 +6,6 @@ import DisplayEventsList from '../DisplayEventsList/DisplayEventsList'
 import {Api} from '../../util/Api';
 import {EventApi} from '../../util/Api';
 
-
 class App extends React.Component {
   constructor(props){
     super(props);
