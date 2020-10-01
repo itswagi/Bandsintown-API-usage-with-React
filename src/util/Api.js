@@ -15,7 +15,6 @@ export const Api = {
       }
     })
     .then(jsonResponse => {
-      if(jsonResponse.id){
         try{
           return jsonResponse.map(artist => ({
             id: artist.id,
@@ -31,7 +30,6 @@ export const Api = {
             facebook: jsonResponse.facebook_page_url
           }
         }
-      }
     })
   }
 }
