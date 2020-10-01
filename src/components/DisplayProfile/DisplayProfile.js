@@ -14,6 +14,9 @@ class DisplayProfile extends React.Component{
           <h2>{this.props.artist.name}</h2>
           <a href={this.props.artist.facebook}>{this.props.artist.facebook}</a>
         </div>
+        <div className="showEvents">
+          <p>View Events</p>
+        </div>
       </div>
     )
   }

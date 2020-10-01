@@ -37,3 +37,9 @@
   font-weight: 300;
   line-height: 1rem;
 }
+
+.showEvents{
+  margin-top: 0.5rem;
+  text-align: right;
+  font-size: 1rem;
+}

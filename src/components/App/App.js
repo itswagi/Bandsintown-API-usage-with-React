@@ -12,8 +12,10 @@ class App extends React.Component {
     this.state = {
       profiles: [],
       events: [],
+      display: 'none'
     };
     this.searchApi = this.searchApi.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
   searchApi(artist){
     Api.search(artist).then(profiles => {
@@ -22,14 +24,20 @@ class App extends React.Component {
     EventApi.search(artist).then( events => {
       this.setState({events: events});
     });
-
+  }
+  handleClick(){
+    this.setState({display: 'block'})
   }
   render(){
     return (
       <div className="mainContainer">
         <Search searchApi={this.searchApi}/>
-        <DisplayList artist={this.state.profiles}/>
+        <div onClick={this.handleClick}>
+        <DisplayList artist={this.state.profiles} />
+        </div>
+        <div style={{display: `${this.state.display}`}}>
         <DisplayEventsList eventsList={this.state.events}/>
+        </div>
       </div>
     )
   }
