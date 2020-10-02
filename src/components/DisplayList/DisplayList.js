@@ -8,10 +8,14 @@ class DisplayList extends React.Component{
       <div className="DisplayList">
       {
         this.props.artist.map( artists => {
-          return <DisplayProfile artist={artists} key={artists.id}/>
+          console.log()
+          if (artists.id === undefined || artists.id === null) {
+            return <span key={1}>Artist Not Found</span>
+          }else{
+            return <DisplayProfile artist={artists} key={artists.id}/>
+          }
         })
       }
-
       </div>
     )
   }

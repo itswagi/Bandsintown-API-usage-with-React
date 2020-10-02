@@ -30,6 +30,10 @@ export const Api = {
             facebook: jsonResponse.facebook_page_url
           }
         }
+    }).catch(error => {
+      return {
+        id: null,
+      }
     })
   }
 }
@@ -41,6 +45,8 @@ export const EventApi = {
         try{
           if(response.ok){
             return response.json();
+          }else if(response.status === 404){
+            return Promise.reject('error 404')
           }
         }catch(error){
           console.log(error)
@@ -67,6 +73,6 @@ export const EventApi = {
             }
         }
         }
-      )
+      ).catch( error => { return []})
     }
 }

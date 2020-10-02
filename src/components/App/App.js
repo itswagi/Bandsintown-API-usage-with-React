@@ -13,15 +13,16 @@ class App extends React.Component {
       profiles: [],
       events: [],
       display: 'none',
-      apiCallFinished: false
+      apiCallFinished: false,
+      callEvents: false
     };
     this.searchApi = this.searchApi.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
   searchApi(artist){
     Api.search(artist).then(profiles => {
-      this.setState({profiles: [profiles]});
       this.setState({display: 'none'})
+      this.setState({profiles: [profiles]});
     });
     EventApi.search(artist).then( events => {
       this.setState({events: events, apiCallFinished: true});
@@ -30,14 +31,14 @@ class App extends React.Component {
   handleClick(){
     this.setState({display: 'block'})
   }
-
   render(){
     const noEvent = this.state.events.length
     let Alert;
-    if(this.state.apiCallFinished && noEvent == 0){
+    if(this.state.apiCallFinished && noEvent === 0){
         Alert = <span>No Upcomming Events</span>
+    }else{
+        Alert = <DisplayEventsList eventsList={this.state.events}/>
     }
-
     return (
       <div className="mainContainer">
         <Search searchApi={this.searchApi}/>
@@ -45,7 +46,6 @@ class App extends React.Component {
         <DisplayList artist={this.state.profiles} />
         </div>
         <div style={{display: `${this.state.display}`}}>
-        <DisplayEventsList eventsList={this.state.events}/>
         {Alert}
         </div>
       </div>
