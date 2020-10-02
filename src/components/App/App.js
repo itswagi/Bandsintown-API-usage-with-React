@@ -6,13 +6,13 @@ import DisplayEventsList from '../DisplayEventsList/DisplayEventsList'
 import {Api} from '../../util/Api';
 import {EventApi} from '../../util/Api';
 
-class App extends React.Component {
+class App extends React.Component { //Comment
   constructor(props){
     super(props);
     this.state = {
       profiles: [],
       events: [],
-      display: 'none',
+      display: 'hidden',
       apiCallFinished: false,
       callEvents: false
     };
@@ -29,7 +29,7 @@ class App extends React.Component {
     });
   }
   handleClick(){
-    this.setState({display: 'block'})
+    this.setState({display: 'flex'})
   }
   render(){
     const noEvent = this.state.events.length
