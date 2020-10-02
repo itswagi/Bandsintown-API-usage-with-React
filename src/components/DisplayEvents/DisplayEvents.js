@@ -1,9 +1,10 @@
 import React from 'react';
 import './DisplayEvents.css';
 
-
-
 class DisplayEvents extends React.Component{
+  formatDate(){
+    return this.props.events.date.split('T')[0]
+  }
   render(){
     return (
       <div className="eventscontainer">
@@ -26,7 +27,7 @@ class DisplayEvents extends React.Component{
             </div>
             <div className="eventdetail">
               <h3>Date</h3>
-              <p>{this.props.events.date}</p>
+              <p>{this.formatDate()}</p>
             </div>
           </div>
         </div>

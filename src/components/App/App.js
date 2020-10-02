@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import ReactCSSTransitionGroup from 'react-transition-group';
 import DisplayList from '../DisplayList/DisplayList'
 import Search from '../Search/Search';
 import DisplayEventsList from '../DisplayEventsList/DisplayEventsList'
@@ -21,6 +20,7 @@ class App extends React.Component {
   searchApi(artist){
     Api.search(artist).then(profiles => {
       this.setState({profiles: [profiles]});
+      this.setState({display: 'none'})
     });
     EventApi.search(artist).then( events => {
       this.setState({events: events});
@@ -29,7 +29,13 @@ class App extends React.Component {
   handleClick(){
     this.setState({display: 'block'})
   }
+
   render(){
+    const noEvent = this.state.events.length
+    let Alert;
+    if(noEvent == 0){
+      Alert = <span>No Upcomming Events</span>
+    }
     return (
       <div className="mainContainer">
         <Search searchApi={this.searchApi}/>
@@ -38,6 +44,7 @@ class App extends React.Component {
         </div>
         <div style={{display: `${this.state.display}`}}>
         <DisplayEventsList eventsList={this.state.events}/>
+        {Alert}
         </div>
       </div>
     )
