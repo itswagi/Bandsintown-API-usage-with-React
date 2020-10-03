@@ -12,9 +12,7 @@ class DisplayList extends React.Component{
       <div className="DisplayList"> {/*Main Container*/}
       {
         this.props.artist.map( artists => {
-          {/*checks if artist information present or not, displays Artist not found message*/}
-          {/*else displays Artist's profile*/}
-          {/*also sets key for map to work correctly*/}
+          {/*checks if artist information present or not, displays Artist not found message else displays Artist's profile also sets key for map to work correctly*/}
           if (artists.id === undefined || artists.id === null) {
             return <span key={1}>Artist Not Found</span>
           }else{
