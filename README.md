@@ -1,12 +1,12 @@
-##Deployed app
+## Deployed app
 
 You'll find a deployed version of this app on (https://itswagi.github.io/jobassignmnet/)
 
-##Running the project
+## Running the project
 
 To run the project on your local machine, simply download the zip file from the repository and perform 1. npm install and 2. npm start, to open the app in your browser.
 
-#To-do
+# To-do
 
 Implement Unit Tests as I am new to testing in react and need more time to understand how tests are conducted in this framework
 
