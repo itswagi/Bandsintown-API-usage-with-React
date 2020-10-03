@@ -2,6 +2,12 @@
 
 You'll find a deployed version of this app on (https://itswagi.github.io/jobassignmnet/)
 
+## Architecture and Design
+
+The app uses React Components to encapsulate features. A separate component is used for making template of artist profiles to display on page. A separate component templates the events to display. Moreover, another component then renders the template components to the DOM. This allows for keeping code clean and easy passing of states between props. Furthermore, Api calls are made in a separate js file and the App.js component gathers all the components together to render on DOM when needed. This strategy allows for easy tracking of states and information sharing between components and groups similar features together. Keeping code concise and compartmentalized allows for easy debugging and addition of new features quickly.
+
+The design of the app is fairly minimal. A single prompt to enter artist information shows up on the screen when you visit the page. Artist information is shown below it when searched for and events of the artist are then shown when a person clicks on the artists profile. The color scheme is also minimal and diverts user attention towards changes in information on the page as the user searches for information. Moreover, all the information is available to the user at all times, the user can search for artists again and see events quickly.
+
 ## Running the project
 
 To run the project on your local machine, simply download the zip file from the repository and perform 1. npm install and 2. npm start, to open the app in your browser.
