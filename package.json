@@ -2,18 +2,16 @@
   "name": "assignment",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://itswagi.github.io/Bandsintown-API-usage-with-React",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "isomorphic-fetch": "^3.0.0",
-    "node-fetch": "^2.6.1",
     "react": "^16.13.1",
     "react-api-cache": "^1.1.0",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.3",
-    "react-transition-group": "^1.2.1",
-    "whatwg-fetch": "^3.4.1"
+    "react-scripts": "^4.0.0",
+    "save-dev": "0.0.1-security"
   },
   "scripts": {
     "start": "react-scripts start",
