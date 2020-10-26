@@ -1,6 +1,6 @@
 ## Deployed app
 
-You'll find a deployed version of this app on (https://itswagi.github.io/jobassignmnet/)
+You'll find a deployed version of this app on (https://itswagi.github.io/Bandsintown-API-usage-with-React/)
 
 ## Architecture and Design
 
