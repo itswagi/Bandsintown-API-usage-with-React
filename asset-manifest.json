@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/jobassignmnet/static/css/main.0633b1d3.chunk.css",
-    "main.js": "/jobassignmnet/static/js/main.b5a49b91.chunk.js",
-    "main.js.map": "/jobassignmnet/static/js/main.b5a49b91.chunk.js.map",
-    "runtime-main.js": "/jobassignmnet/static/js/runtime-main.217fdab0.js",
-    "runtime-main.js.map": "/jobassignmnet/static/js/runtime-main.217fdab0.js.map",
-    "static/js/2.0278251c.chunk.js": "/jobassignmnet/static/js/2.0278251c.chunk.js",
-    "static/js/2.0278251c.chunk.js.map": "/jobassignmnet/static/js/2.0278251c.chunk.js.map",
-    "index.html": "/jobassignmnet/index.html",
-    "static/css/main.0633b1d3.chunk.css.map": "/jobassignmnet/static/css/main.0633b1d3.chunk.css.map",
-    "static/js/2.0278251c.chunk.js.LICENSE.txt": "/jobassignmnet/static/js/2.0278251c.chunk.js.LICENSE.txt"
+    "main.css": "/Bandsintown-API-usage-with-React/static/css/main.0633b1d3.chunk.css",
+    "main.js": "/Bandsintown-API-usage-with-React/static/js/main.d84d346d.chunk.js",
+    "main.js.map": "/Bandsintown-API-usage-with-React/static/js/main.d84d346d.chunk.js.map",
+    "runtime-main.js": "/Bandsintown-API-usage-with-React/static/js/runtime-main.bbce6446.js",
+    "runtime-main.js.map": "/Bandsintown-API-usage-with-React/static/js/runtime-main.bbce6446.js.map",
+    "static/js/2.0278251c.chunk.js": "/Bandsintown-API-usage-with-React/static/js/2.0278251c.chunk.js",
+    "static/js/2.0278251c.chunk.js.map": "/Bandsintown-API-usage-with-React/static/js/2.0278251c.chunk.js.map",
+    "index.html": "/Bandsintown-API-usage-with-React/index.html",
+    "static/css/main.0633b1d3.chunk.css.map": "/Bandsintown-API-usage-with-React/static/css/main.0633b1d3.chunk.css.map",
+    "static/js/2.0278251c.chunk.js.LICENSE.txt": "/Bandsintown-API-usage-with-React/static/js/2.0278251c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.217fdab0.js",
+    "static/js/runtime-main.bbce6446.js",
     "static/js/2.0278251c.chunk.js",
     "static/css/main.0633b1d3.chunk.css",
-    "static/js/main.b5a49b91.chunk.js"
+    "static/js/main.d84d346d.chunk.js"
   ]
 }
